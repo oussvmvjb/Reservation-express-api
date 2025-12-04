@@ -28,7 +28,7 @@ public class Reservation {
     private LocalDate reservationDate;
     
     @Column(name = "reservation_time", nullable = false)
-    private String reservationTime;
+    private LocalTime reservationTime;
     
     @Column(name = "number_of_guests", nullable = false)
     private Integer numberOfGuests;
@@ -66,8 +66,8 @@ public class Reservation {
     public LocalDate getReservationDate() { return reservationDate; }
     public void setReservationDate(LocalDate reservationDate) { this.reservationDate = reservationDate; }
     
-    public String getReservationTime() { return reservationTime; }
-    public void setReservationTime(String reservationTime) { this.reservationTime = reservationTime; }
+    public LocalTime getReservationTime() { return reservationTime; }
+    public void setReservationTime(LocalTime localTime) { this.reservationTime = localTime; }
     
     public Integer getNumberOfGuests() { return numberOfGuests; }
     public void setNumberOfGuests(Integer numberOfGuests) { this.numberOfGuests = numberOfGuests; }
